@@ -2,16 +2,17 @@ const CFonts = require('cfonts');
 const Inquirer = require('inquirer');
 const Opn = require('opn');
 const businessCard = require('./data/business-card.json');
-// console.log(businessCard);
-console.log(Opn);
+
+/**
+ * Constants
+ */
 const Actions = {
-    BitBucket() { Opn(businessCard.socialMedia.BitBucket.url); },
-    Blog()      { console.log(businessCard.socialMedia.Blog.url); 
-        console.log( Opn(businessCard.socialMedia.Blog.url).then(console.log('Done!')) ); },
-    GitHub()    { Opn(businessCard.socialMedia.GitHub.url); },
-    LinkedIn()  { Opn(businessCard.socialMedia.LinkedIn.url); },
-    Twitter()   { Opn(businessCard.socialMedia.Twitter.url); },
-    YouTube()   { Opn(businessCard.socialMedia.YouTube.url); },
+    BitBucket() { openSite(businessCard.socialMedia.BitBucket.url); },
+    Blog()      { openSite(businessCard.socialMedia.Blog.url); },
+    GitHub()    { openSite(businessCard.socialMedia.GitHub.url); },
+    LinkedIn()  { openSite(businessCard.socialMedia.LinkedIn.url); },
+    Twitter()   { openSite(businessCard.socialMedia.Twitter.url); },
+    YouTube()   { openSite(businessCard.socialMedia.YouTube.url); },
 };
 
 const FontTypes = [
@@ -22,14 +23,36 @@ const FontTypes = [
     'simpleBlock'
 ];
 
+
+/**
+ * Helpers
+ */
 function getFontType() {
     return FontTypes[
         Math.floor(Math.random() * FontTypes.length)
     ];
 };
 
+function openSite(site) {
+    console.log(site);
+    Opn(site);
+}
+
+
+/**
+ * Main
+ */
+// Banner
 CFonts.say('DevTactix', {
+    align: 'center',
     font: getFontType(),
+    colors: ['candy'],
+    background: 'transparent'
+});
+
+CFonts.say(`${businessCard.name}|${businessCard.geoLocation.city}, ${businessCard.geoLocation.country}|${businessCard.work.employee.role} @ ${businessCard.work.employee.organization}|${businessCard.work.assignee.role} @ ${businessCard.work.assignee.organization}`, {
+    align: 'center',
+    font: 'console',
     colors: ['yellowBright', 'blue', 'yellowBright'],
     background: 'transparent'
 });
