@@ -6,7 +6,7 @@
     },
     "work": {
         "assignee": "System Architech@HM",
-        "employee": "JavaScript Aficionado@Regent",
+        "employee": "JavaScript Aficionado@Regent"
     },
     "socialMedia": {
         "bitbucket": {
@@ -14,18 +14,18 @@
             "url": "https://bitbucket.org/DevTactix/"
         },
         "blog": {
-            "url": "https://blog.devtactix.se/",
+            "url": "https://blog.devtactix.se/"
         },
         "github": {
             "user": "@DevTactix",
-            "url": "https://github.com/devtactix",
+            "url": "https://github.com/devtactix"
         },
         "twitter": {
             "user": "@DevTactix",
-            "url": "https://twitter.com/devtactix",
+            "url": "https://twitter.com/devtactix"
         },
         "youtube": {
-            "url": "https://www.youtube.com/channel/UCcSnEJoTs7tiqxRFQgYNcSg/",
+            "url": "https://www.youtube.com/channel/UCcSnEJoTs7tiqxRFQgYNcSg/"
         }
     }
 }
