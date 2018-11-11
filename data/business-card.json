@@ -9,6 +9,10 @@
         "employee": "JavaScript Aficionado@Regent",
     },
     "socialMedia": {
+        "bitbucket": {
+            "user": "@DevTactix",
+            "url": "https://bitbucket.org/DevTactix/"
+        },
         "blog": {
             "url": "https://blog.devtactix.se/",
         },
