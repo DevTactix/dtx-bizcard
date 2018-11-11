@@ -5,8 +5,13 @@
         "country": "Sweden"
     },
     "work": {
-        "assignee": "System Architech@HM",
-        "employee": "JavaScript Aficionado@Regent"
+        "assignee": {
+            "organization": "HM",
+            "role": "JavaScript Specialist/System Architech"
+        },
+        "employee": {
+            "organization": "Regent",
+            "role": "JavaScript Aficionado"
     },
     "socialMedia": {
         "bitbucket": {
@@ -19,6 +24,10 @@
         "github": {
             "user": "@DevTactix",
             "url": "https://github.com/devtactix"
+        },
+        "linkedin": {
+            "user": "@DevTactix",
+            "url": "https://www.linkedin.com/in/devtactix/"
         },
         "twitter": {
             "user": "@DevTactix",
