@@ -1,0 +1,12 @@
+{
+  "name": "dtx-business-card",
+  "version": "1.0.0",
+  "description": "DTX Digital Business Card",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Thomas Sandberg (DevTactix)",
+  "license": "MIT"
+}

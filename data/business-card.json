@@ -1,0 +1,27 @@
+{
+    "name": "Thomas Sandberg",
+    "geoLocation": {
+        "city": "Stockholm",
+        "country": "Sweden"
+    },
+    "work": {
+        "assignee": "System Architech@HM",
+        "employee": "JavaScript Aficionado@Regent",
+    },
+    "socialMedia": {
+        "blog": {
+            "url": "https://blog.devtactix.se/",
+        },
+        "github": {
+            "user": "@DevTactix",
+            "url": "https://github.com/devtactix",
+        },
+        "twitter": {
+            "user": "@DevTactix",
+            "url": "https://twitter.com/devtactix",
+        },
+        "youtube": {
+            "url": "https://www.youtube.com/channel/UCcSnEJoTs7tiqxRFQgYNcSg/",
+        }
+    }
+}
