@@ -6,7 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["business card"],
+  "keywords": [
+    "business card"
+  ],
   "author": "Thomas Sandberg (DevTactix)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cfonts": "^2.2.3",
+    "inquirer": "^6.2.0",
+    "opn": "^5.4.0"
+  }
 }
