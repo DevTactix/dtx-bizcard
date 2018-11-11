@@ -1,1 +1,1 @@
-console.warn( JSON.stringify('./data/business-card.json', null, 4) );
+console.warn( JSON.stringify(require('./data/business-card.json'), null, 4) );
