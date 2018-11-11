@@ -12,29 +12,30 @@
         "employee": {
             "organization": "Regent",
             "role": "JavaScript Aficionado"
-    },
-    "socialMedia": {
-        "bitbucket": {
-            "user": "@DevTactix",
-            "url": "https://bitbucket.org/DevTactix/"
         },
-        "blog": {
-            "url": "https://blog.devtactix.se/"
-        },
-        "github": {
-            "user": "@DevTactix",
-            "url": "https://github.com/devtactix"
-        },
-        "linkedin": {
-            "user": "@DevTactix",
-            "url": "https://www.linkedin.com/in/devtactix/"
-        },
-        "twitter": {
-            "user": "@DevTactix",
-            "url": "https://twitter.com/devtactix"
-        },
-        "youtube": {
-            "url": "https://www.youtube.com/channel/UCcSnEJoTs7tiqxRFQgYNcSg/"
+        "socialMedia": {
+            "bitbucket": {
+                "user": "@DevTactix",
+                "url": "https://bitbucket.org/DevTactix/"
+            },
+            "blog": {
+                "url": "https://blog.devtactix.se/"
+            },
+            "github": {
+                "user": "@DevTactix",
+                "url": "https://github.com/devtactix"
+            },
+            "linkedin": {
+                "user": "@DevTactix",
+                "url": "https://www.linkedin.com/in/devtactix/"
+            },
+            "twitter": {
+                "user": "@DevTactix",
+                "url": "https://twitter.com/devtactix"
+            },
+            "youtube": {
+                "url": "https://www.youtube.com/channel/UCcSnEJoTs7tiqxRFQgYNcSg/"
+            }
         }
     }
 }
