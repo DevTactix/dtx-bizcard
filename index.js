@@ -7,12 +7,12 @@ const businessCard = require('./data/business-card.json');
  * Constants
  */
 const Actions = {
-    BitBucket() { openSite(businessCard.socialMedia.BitBucket.url); },
-    Blog()      { openSite(businessCard.socialMedia.Blog.url); },
-    GitHub()    { openSite(businessCard.socialMedia.GitHub.url); },
-    LinkedIn()  { openSite(businessCard.socialMedia.LinkedIn.url); },
-    Twitter()   { openSite(businessCard.socialMedia.Twitter.url); },
-    YouTube()   { openSite(businessCard.socialMedia.YouTube.url); },
+    BitBucket() { Opn(businessCard.socialMedia.BitBucket.url); },
+    Blog()      { Opn(businessCard.socialMedia.Blog.url); },
+    GitHub()    { Opn(businessCard.socialMedia.GitHub.url); },
+    LinkedIn()  { Opn(businessCard.socialMedia.LinkedIn.url); },
+    Twitter()   { Opn(businessCard.socialMedia.Twitter.url); },
+    YouTube()   { Opn(businessCard.socialMedia.YouTube.url); },
 };
 
 const FontTypes = [
@@ -32,11 +32,6 @@ function getFontType() {
         Math.floor(Math.random() * FontTypes.length)
     ];
 };
-
-function openSite(site) {
-    console.log(site);
-    Opn(site);
-}
 
 
 /**
@@ -74,5 +69,4 @@ Inquirer
     .then(answer => {
         console.log(answer.choice);
         Actions[answer.choice]();
-        process.exit(1);
     });
