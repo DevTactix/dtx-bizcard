@@ -69,4 +69,5 @@ Inquirer
     .then(answer => {
         console.log(answer.choice);
         Actions[answer.choice]();
+        process.exitCode = 0;
     });
