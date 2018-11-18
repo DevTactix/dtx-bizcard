@@ -4,11 +4,13 @@
   "description": "DTX Digital Business Card",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [
-    "business card"
+    "bizcard",
+    "business card",
+    "contact",
+    "DevTactix"
   ],
   "author": "Thomas Sandberg (DevTactix)",
   "license": "MIT",
