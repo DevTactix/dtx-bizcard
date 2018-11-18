@@ -1,10 +1,10 @@
 {
   "name": "dtx-bizcard",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "DTX Digital Business Card",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/DevTactix/dtx-bizcard.git"
+    "type": "git",
+    "url": "https://github.com/DevTactix/dtx-bizcard.git"
   },
   "main": "index.js",
   "scripts": {
