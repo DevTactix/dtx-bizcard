@@ -1,4 +1,6 @@
 # dtx-bizcard
+![npm](https://img.shields.io/npm/v/:package.svg?style=plastic)
+![NpmLicense](https://img.shields.io/npm/l/:package.svg?style=plastic)
 
 DevTactix digital business card
 
