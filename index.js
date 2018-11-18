@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const CFonts = require('cfonts');
 const Inquirer = require('inquirer');
 const Opn = require('opn');
