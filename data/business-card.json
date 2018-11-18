@@ -6,12 +6,13 @@
     },
     "work": {
         "assignee": {
-            "organization": "HM",
-            "role": "JavaScript Specialist/System Architech"
+            "organization": "H&M",
+            "role": "JavaScript Specialist/System Architecht"
         },
         "employee": {
             "organization": "Regent",
-            "role": "JavaScript Aficionado"
+            "role": "JavaScript Aficionado",
+            "url": "https://www.regent.se/"
         }
     },
     "socialMedia": {
@@ -20,7 +21,7 @@
             "url": "https://bitbucket.org/DevTactix/"
         },
         "Blog": {
-            "url": "http://blog.devtactix.se/"
+            "url": "https://blog.devtactix.se/"
         },
         "GitHub": {
             "user": "@DevTactix",

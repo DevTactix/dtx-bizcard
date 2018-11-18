@@ -12,6 +12,7 @@ const Actions = {
     GitHub()    { Opn(businessCard.socialMedia.GitHub.url); },
     LinkedIn()  { Opn(businessCard.socialMedia.LinkedIn.url); },
     Twitter()   { Opn(businessCard.socialMedia.Twitter.url); },
+    Work()      { Opn(businessCard.work.employee.url); },
     YouTube()   { Opn(businessCard.socialMedia.YouTube.url); },
 };
 
@@ -63,6 +64,7 @@ Inquirer
             "GitHub",
             "LinkedIn",
             "Twitter",
+            "Work",
             "YouTube"
         ]
     }])
