@@ -1,6 +1,6 @@
 {
   "name": "dtx-bizcard",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "DTX Digital Business Card",
   "repository": {
     "type": "git",
@@ -22,8 +22,8 @@
   "author": "Thomas Sandberg (DevTactix)",
   "license": "MIT",
   "dependencies": {
-    "cfonts": "^2.2.3",
-    "inquirer": "^6.2.0",
-    "opn": "^5.4.0"
+    "cfonts": "^2.4.4",
+    "inquirer": "^6.5.0",
+    "opn": "^6.0.0"
   }
 }
