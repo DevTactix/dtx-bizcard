@@ -1,7 +1,7 @@
 {
   "name": "dtx-bizcard",
-  "version": "1.1.8",
-  "description": "DTX Digital Business Card",
+  "version": "1.1.9",
+  "description": "DevTactix Digital Business Card",
   "repository": {
     "type": "git",
     "url": "https://github.com/DevTactix/dtx-bizcard.git"
@@ -11,6 +11,8 @@
     "dtx-bizcard": "./index.js"
   },
   "scripts": {
+    "check:outdated": "npm outdated & exit /b 0",
+    "npm:reinstall": "npx rimraf -- package-lock.json node_modules/ & npm i",
     "start": "node index.js"
   },
   "keywords": [
@@ -22,8 +24,8 @@
   "author": "Thomas Sandberg (DevTactix)",
   "license": "MIT",
   "dependencies": {
-    "cfonts": "^2.4.4",
-    "inquirer": "^6.5.0",
+    "cfonts": "^2.8.1",
+    "inquirer": "^7.1.0",
     "opn": "^6.0.0"
   }
 }
