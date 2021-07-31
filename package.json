@@ -1,6 +1,6 @@
 {
   "name": "dtx-bizcard",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "DevTactix Digital Business Card",
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "cfonts": "^2.8.6",
-    "inquirer": "^7.3.3",
+    "inquirer": "^8.1.2",
     "opn": "^6.0.0"
   }
 }
