@@ -13,6 +13,7 @@ const Actions = {
     Blog()      { Opn(businessCard.socialMedia.Blog.url); },
     GitHub()    { Opn(businessCard.socialMedia.GitHub.url); },
     LinkedIn()  { Opn(businessCard.socialMedia.LinkedIn.url); },
+    NPM()       { Opn(businessCard.socialMedia.NPM.url); },
     Twitter()   { Opn(businessCard.socialMedia.Twitter.url); },
     Work()      { Opn(businessCard.work.employee.url); },
     YouTube()   { Opn(businessCard.socialMedia.YouTube.url); },
@@ -65,6 +66,7 @@ Inquirer
             "Blog",
             "GitHub",
             "LinkedIn",
+            "NPM",
             "Twitter",
             "Work",
             "YouTube"
