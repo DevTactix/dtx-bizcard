@@ -11,7 +11,7 @@
     "dtx-bizcard": "./index.js"
   },
   "scripts": {
-    "check:outdated": "npm outdated & exit /b 0",
+    "check:outdated": "npm outdated && exit 0",
     "npm:reinstall": "npx rimraf -- package-lock.json node_modules/ & npm i",
     "start": "node index.js"
   },
@@ -24,8 +24,8 @@
   "author": "Thomas Sandberg (DevTactix)",
   "license": "MIT",
   "dependencies": {
-    "cfonts": "^2.8.6",
-    "inquirer": "^8.1.2",
-    "opn": "^6.0.0"
+    "cfonts": "2.10.0",
+    "inquirer": "8.2.0",
+    "opn": "6.0.0"
   }
 }
