@@ -6,8 +6,8 @@
     },
     "work": {
         "assignee": {
-            "organization": "H&M",
-            "role": "JavaScript Specialist/System Architect"
+            "organization": "Sinch",
+            "role": "Frontend Team Lead"
         },
         "employee": {
             "organization": "Regent",
@@ -16,10 +16,6 @@
         }
     },
     "socialMedia": {
-        "BitBucket": {
-            "user": "@DevTactix",
-            "url": "https://bitbucket.org/DevTactix/"
-        },
         "Blog": {
             "url": "https://blog.devtactix.se/"
         },
@@ -38,6 +34,9 @@
         "Twitter": {
             "user": "@DevTactix",
             "url": "https://twitter.com/devtactix"
+        },
+        "Website": {
+            "url": "https://devtactix.se/"
         },
         "YouTube": {
             "url": "https://www.youtube.com/channel/UCcSnEJoTs7tiqxRFQgYNcSg/"

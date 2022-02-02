@@ -1,79 +1,79 @@
 #!/usr/bin/env node
 
-const CFonts = require('cfonts');
-const Inquirer = require('inquirer');
-const Opn = require('opn');
-const businessCard = require('./data/business-card.json');
+const CFonts = require("cfonts");
+const Inquirer = require("inquirer");
+const Opn = require("opn");
+const businessCard = require("./data/business-card.json");
 
 /**
  * Constants
  */
 const Actions = {
-    BitBucket() { Opn(businessCard.socialMedia.BitBucket.url); },
-    Blog()      { Opn(businessCard.socialMedia.Blog.url); },
-    GitHub()    { Opn(businessCard.socialMedia.GitHub.url); },
-    LinkedIn()  { Opn(businessCard.socialMedia.LinkedIn.url); },
-    NPM()       { Opn(businessCard.socialMedia.NPM.url); },
-    Twitter()   { Opn(businessCard.socialMedia.Twitter.url); },
-    Work()      { Opn(businessCard.work.employee.url); },
-    YouTube()   { Opn(businessCard.socialMedia.YouTube.url); },
+    Blog() {
+        Opn(businessCard.socialMedia.Blog.url);
+    },
+    GitHub() {
+        Opn(businessCard.socialMedia.GitHub.url);
+    },
+    LinkedIn() {
+        Opn(businessCard.socialMedia.LinkedIn.url);
+    },
+    NPM() {
+        Opn(businessCard.socialMedia.NPM.url);
+    },
+    Twitter() {
+        Opn(businessCard.socialMedia.Twitter.url);
+    },
+    Website() {
+        Opn(businessCard.socialMedia.Website.url);
+    },
+    Work() {
+        Opn(businessCard.work.employee.url);
+    },
+    YouTube() {
+        Opn(businessCard.socialMedia.YouTube.url);
+    },
 };
 
-const FontTypes = [
-    'block',
-    'chrome',
-    'simple',
-    'simple3d',
-    'simpleBlock'
-];
-
+const FontTypes = ["block", "chrome", "simple", "simple3d", "simpleBlock"];
 
 /**
  * Helpers
  */
 function getFontType() {
-    return FontTypes[
-        Math.floor(Math.random() * FontTypes.length)
-    ];
-};
-
+    return FontTypes[Math.floor(Math.random() * FontTypes.length)];
+}
 
 /**
  * Main
  */
 // Banner
-CFonts.say('DevTactix', {
-    align: 'center',
+CFonts.say("DevTactix", {
+    align: "center",
     font: getFontType(),
-    colors: ['candy'],
-    background: 'transparent'
+    colors: ["candy"],
+    background: "transparent",
 });
 
-CFonts.say(`${businessCard.name}|${businessCard.geoLocation.city}, ${businessCard.geoLocation.country}|${businessCard.work.employee.role} @ ${businessCard.work.employee.organization}|${businessCard.work.assignee.role} @ ${businessCard.work.assignee.organization}`, {
-    align: 'center',
-    font: 'console',
-    colors: ['yellowBright', 'blue', 'yellowBright'],
-    background: 'transparent'
-});
+CFonts.say(
+    `${businessCard.name}|${businessCard.geoLocation.city}, ${businessCard.geoLocation.country}|${businessCard.work.employee.role} @ ${businessCard.work.employee.organization}|${businessCard.work.assignee.role} @ ${businessCard.work.assignee.organization}`,
+    {
+        align: "center",
+        font: "console",
+        colors: ["yellowBright", "blue", "yellowBright"],
+        background: "transparent",
+    }
+);
 
-Inquirer
-    .prompt([{
-        type: 'list',
-        name: 'choice',
-        message: 'Connect, follow or just check-me out:',
-        choices: [
-            "BitBucket",
-            "Blog",
-            "GitHub",
-            "LinkedIn",
-            "NPM",
-            "Twitter",
-            "Work",
-            "YouTube"
-        ]
-    }])
-    .then(answer => {
-        console.log(answer.choice);
-        Actions[answer.choice]();
-        process.exitCode = 0;
-    });
+Inquirer.prompt([
+    {
+        type: "list",
+        name: "choice",
+        message: "Connect, follow or just check-me out:",
+        choices: ["Blog", "GitHub", "LinkedIn", "NPM", "Twitter", "Website", "Work", "YouTube"],
+    },
+]).then((answer) => {
+    console.log(answer.choice);
+    Actions[answer.choice]();
+    process.exitCode = 0;
+});
