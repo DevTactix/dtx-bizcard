@@ -2,7 +2,7 @@
 
 const CFonts = require("cfonts");
 const Inquirer = require("inquirer");
-const Opn = require("opn");
+const Open = require("open");
 const businessCard = require("./data/business-card.json");
 
 /**
@@ -10,28 +10,28 @@ const businessCard = require("./data/business-card.json");
  */
 const Actions = {
     Blog() {
-        Opn(businessCard.socialMedia.Blog.url);
+        Open(businessCard.socialMedia.Blog.url);
     },
     GitHub() {
-        Opn(businessCard.socialMedia.GitHub.url);
+        Open(businessCard.socialMedia.GitHub.url);
     },
     LinkedIn() {
-        Opn(businessCard.socialMedia.LinkedIn.url);
+        Open(businessCard.socialMedia.LinkedIn.url);
     },
     NPM() {
-        Opn(businessCard.socialMedia.NPM.url);
+        Open(businessCard.socialMedia.NPM.url);
     },
     Twitter() {
-        Opn(businessCard.socialMedia.Twitter.url);
+        Open(businessCard.socialMedia.Twitter.url);
     },
     Website() {
-        Opn(businessCard.socialMedia.Website.url);
+        Open(businessCard.socialMedia.Website.url);
     },
     Work() {
-        Opn(businessCard.work.employee.url);
+        Open(businessCard.work.employee.url);
     },
     YouTube() {
-        Opn(businessCard.socialMedia.YouTube.url);
+        Open(businessCard.socialMedia.YouTube.url);
     },
 };
 
