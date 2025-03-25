@@ -3,7 +3,7 @@ name: Publish to NPM
 on:
   push:
     branches:
-      - main # Adjust if you use a different default branch
+      - master # Adjust if you use a different default branch
   workflow_dispatch: # Allows manual triggering from GitHub UI
 
 jobs:
