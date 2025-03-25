@@ -1,45 +1,45 @@
 {
-    "name": "Thomas Sandberg",
-    "geoLocation": {
-        "city": "Stockholm",
-        "country": "Sweden"
+  "name": "Thomas Sandberg",
+  "geoLocation": {
+    "city": "Stockholm",
+    "country": "Sweden"
+  },
+  "work": {
+    "assignee": {
+      "organization": "Grasp Research",
+      "role": "Frontend Tech Lead"
     },
-    "work": {
-        "assignee": {
-            "organization": "Grasp Research",
-            "role": "Frontend Tech Lead"
-        },
-        "employee": {
-            "organization": "Regent",
-            "role": "JavaScript Aficionado",
-            "url": "https://www.regent.se/"
-        }
-    },
-    "socialMedia": {
-        "Blog": {
-            "url": "https://blog.devtactix.se/"
-        },
-        "GitHub": {
-            "user": "@DevTactix",
-            "url": "https://github.com/devtactix"
-        },
-        "LinkedIn": {
-            "user": "@DevTactix",
-            "url": "https://www.linkedin.com/in/devtactix/"
-        },
-        "NPM": {
-            "user": "@DevTactix",
-            "url": "https://www.npmjs.com/~devtactix"
-        },
-        "Twitter": {
-            "user": "@DevTactix",
-            "url": "https://twitter.com/devtactix"
-        },
-        "Website": {
-            "url": "https://devtactix.se/"
-        },
-        "YouTube": {
-            "url": "https://www.youtube.com/@devtactix"
-        }
+    "employee": {
+      "organization": "Regent",
+      "role": "JavaScript Aficionado",
+      "url": "https://www.regent.se/"
     }
+  },
+  "socialMedia": {
+    "Blog": {
+      "url": "https://blog.devtactix.se/"
+    },
+    "GitHub": {
+      "user": "@DevTactix",
+      "url": "https://github.com/devtactix"
+    },
+    "LinkedIn": {
+      "user": "@DevTactix",
+      "url": "https://www.linkedin.com/in/devtactix/"
+    },
+    "NPM": {
+      "user": "@DevTactix",
+      "url": "https://www.npmjs.com/~devtactix"
+    },
+    "Twitter": {
+      "user": "@DevTactix",
+      "url": "https://twitter.com/devtactix"
+    },
+    "Website": {
+      "url": "https://devtactix.se/"
+    },
+    "YouTube": {
+      "url": "https://www.youtube.com/@devtactix"
+    }
+  }
 }
