@@ -14,7 +14,7 @@ This document outlines the deployment process for the project.
 To bump the version and publish the package to NPM, use the following command:
 
 ```bash
-npm run npm:version-publish <type>
+npm run npm:version-publish:<type>
 ```
 
 Where `type` can be one of the following:
@@ -26,5 +26,5 @@ Where `type` can be one of the following:
 Example:
 
 ```bash
-npm run npm:version-publish patch
+npm run npm:version-publish:patch
 ```
