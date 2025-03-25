@@ -14,6 +14,9 @@
   "scripts": {
     "check:outdated": "npm outdated && exit 0",
     "npm:reinstall": "npx rimraf -- package-lock.json node_modules/ && npm i",
+    "npm:version-publish:patch": "npm version patch && git push origin master --tags",
+    "npm:version-publish:minor": "npm version minor && git push origin master --tags",
+    "npm:version-publish:major": "npm version major && git push origin master --tags",
     "start": "node index.js"
   },
   "keywords": [
@@ -26,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "cfonts": "2.10.1",
-    "inquirer": "8.2.5",
-    "open": "8.4.0"
+    "inquirer": "8.2.6",
+    "open": "8.4.2"
   }
 }
