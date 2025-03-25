@@ -1,31 +1,32 @@
 {
-    "name": "dtx-bizcard",
-    "version": "1.5.1",
-    "description": "DevTactix Digital Business Card",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/DevTactix/dtx-bizcard.git"
-    },
-    "main": "index.js",
-    "bin": {
-        "dtx-bizcard": "./index.js"
-    },
-    "scripts": {
-        "check:outdated": "npm outdated && exit 0",
-        "npm:reinstall": "npx rimraf -- package-lock.json node_modules/ && npm i",
-        "start": "node index.js"
-    },
-    "keywords": [
-        "bizcard",
-        "business card",
-        "contact",
-        "DevTactix"
-    ],
-    "author": "Thomas Sandberg (DevTactix)",
-    "license": "MIT",
-    "dependencies": {
-        "cfonts": "2.10.1",
-        "inquirer": "8.2.5",
-        "open": "8.4.0"
-    }
+  "name": "dtx-bizcard",
+  "version": "1.5.1",
+  "private": false,
+  "description": "DevTactix Digital Business Card",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevTactix/dtx-bizcard.git"
+  },
+  "main": "index.js",
+  "bin": {
+    "dtx-bizcard": "./index.js"
+  },
+  "scripts": {
+    "check:outdated": "npm outdated && exit 0",
+    "npm:reinstall": "npx rimraf -- package-lock.json node_modules/ && npm i",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "bizcard",
+    "business card",
+    "contact",
+    "DevTactix"
+  ],
+  "author": "Thomas Sandberg (DevTactix)",
+  "license": "MIT",
+  "dependencies": {
+    "cfonts": "2.10.1",
+    "inquirer": "8.2.5",
+    "open": "8.4.0"
+  }
 }
