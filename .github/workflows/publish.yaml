@@ -9,6 +9,8 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
 
     steps:
       - name: Checkout repository
@@ -20,7 +22,8 @@ jobs:
           node-version: 22.14
           registry-url: "https://registry.npmjs.org/"
 
+      - name: Upgrade npm
+        run: npm install -g npm@latest
+
       - name: Publish to NPM
         run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
