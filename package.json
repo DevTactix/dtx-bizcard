@@ -29,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "cfonts": "2.10.1",
-    "inquirer": "8.2.6",
+    "inquirer": "8.2.7",
     "open": "8.4.2"
   }
 }
