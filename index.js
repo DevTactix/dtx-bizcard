@@ -62,7 +62,7 @@ CFonts.say(
     font: "console",
     colors: ["yellowBright", "blue", "yellowBright"],
     background: "transparent",
-  }
+  },
 );
 
 Inquirer.prompt([
@@ -73,7 +73,6 @@ Inquirer.prompt([
     choices: ["Blog", "GitHub", "LinkedIn", "NPM", "Twitter", "Website", "Work", "YouTube"],
   },
 ]).then((answer) => {
-  console.log(answer.choice);
   Actions[answer.choice]();
   process.exitCode = 0;
 });
