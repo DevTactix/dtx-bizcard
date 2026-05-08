@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const CFonts = require("cfonts");
-const Inquirer = require("inquirer");
-const Open = require("open");
-const businessCard = require("./data/business-card.json");
+import CFonts from "cfonts";
+import Inquirer from "inquirer";
+import Open from "open";
+import businessCard from "./data/business-card.json" with { type: "json" };
 
 /**
  * Constants
@@ -67,7 +67,7 @@ CFonts.say(
 
 Inquirer.prompt([
   {
-    type: "list",
+    type: "select",
     name: "choice",
     message: "Connect, follow or just check-me out:",
     choices: ["Blog", "GitHub", "LinkedIn", "NPM", "Twitter", "Website", "Work", "YouTube"],

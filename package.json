@@ -7,6 +7,7 @@
     "type": "git",
     "url": "https://github.com/DevTactix/dtx-bizcard.git"
   },
+  "type": "module",
   "main": "index.js",
   "bin": {
     "dtx-bizcard": "./index.js"
@@ -28,8 +29,8 @@
   "author": "Thomas Sandberg (DevTactix)",
   "license": "MIT",
   "dependencies": {
-    "cfonts": "2.10.1",
-    "inquirer": "8.2.7",
-    "open": "8.4.2"
+    "cfonts": "3.3.1",
+    "inquirer": "13.4.2",
+    "open": "11.0.0"
   }
 }
