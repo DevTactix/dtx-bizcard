@@ -10,28 +10,28 @@ import businessCard from "./data/business-card.json" with { type: "json" };
  */
 const Actions = {
   Blog() {
-    Open(businessCard.socialMedia.Blog.url);
+    return Open(businessCard.socialMedia.Blog.url);
   },
   GitHub() {
-    Open(businessCard.socialMedia.GitHub.url);
+    return Open(businessCard.socialMedia.GitHub.url);
   },
   LinkedIn() {
-    Open(businessCard.socialMedia.LinkedIn.url);
+    return Open(businessCard.socialMedia.LinkedIn.url);
   },
   NPM() {
-    Open(businessCard.socialMedia.NPM.url);
+    return Open(businessCard.socialMedia.NPM.url);
   },
   Twitter() {
-    Open(businessCard.socialMedia.Twitter.url);
+    return Open(businessCard.socialMedia.Twitter.url);
   },
   Website() {
-    Open(businessCard.socialMedia.Website.url);
+    return Open(businessCard.socialMedia.Website.url);
   },
   Work() {
-    Open(businessCard.work.employee.url);
+    return Open(businessCard.work.employee.url);
   },
   YouTube() {
-    Open(businessCard.socialMedia.YouTube.url);
+    return Open(businessCard.socialMedia.YouTube.url);
   },
 };
 
@@ -72,7 +72,7 @@ Inquirer.prompt([
     message: "Connect, follow or just check-me out:",
     choices: ["Blog", "GitHub", "LinkedIn", "NPM", "Twitter", "Website", "Work", "YouTube"],
   },
-]).then((answer) => {
-  Actions[answer.choice]();
+]).then(async (answer) => {
+  await Actions[answer.choice]();
   process.exitCode = 0;
 });
