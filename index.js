@@ -90,4 +90,7 @@ Inquirer.prompt([
 ]).then(async (answer) => {
   await Actions[answer.choice]();
   process.exitCode = 0;
+}).catch((error) => {
+  console.error("dtx-bizcard:", error);
+  process.exitCode = 1;
 });
