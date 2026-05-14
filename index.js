@@ -56,16 +56,19 @@ CFonts.say("DevTactix", {
   background: "transparent",
 });
 
-CFonts.say(
-  `${businessCard.name}|${businessCard.geoLocation.city}, ${businessCard.geoLocation.country}|${businessCard.work.employee.role} @ ${businessCard.work.employee.organization}|${businessCard.work.assignee.role} @ ${businessCard.work.assignee.organization}`,
-  {
-    align: "center",
-    font: "console",
-    colors: ["yellowBright", "blue", "yellowBright"],
-    background: "transparent",
-    spaceless: true,
-  },
-);
+const YELLOW = "\x1b[93m";
+const RESET = "\x1b[0m";
+const termWidth = process.stdout.columns || 80;
+const infoLines = [
+  businessCard.name,
+  `${businessCard.geoLocation.city}, ${businessCard.geoLocation.country}`,
+  `${businessCard.work.employee.role} @ ${businessCard.work.employee.organization}`,
+  `${businessCard.work.assignee.role} @ ${businessCard.work.assignee.organization}`,
+];
+for (const line of infoLines) {
+  const pad = Math.max(0, Math.floor((termWidth - line.length) / 2));
+  console.log(`${" ".repeat(pad)}${YELLOW}${line}${RESET}`);
+}
 
 console.log();
 
