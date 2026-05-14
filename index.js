@@ -2,37 +2,37 @@
 
 import CFonts from "cfonts";
 import Inquirer from "inquirer";
-import Open from "open";
 import businessCard from "./data/business-card.json" with { type: "json" };
 import pkg from "./package.json" with { type: "json" };
+import openUrl from "./utils/open-url.js";
 
 /**
  * Constants
  */
 const Actions = {
   Blog() {
-    return Open(businessCard.socialMedia.Blog.url);
+    return openUrl(businessCard.socialMedia.Blog.url);
   },
   GitHub() {
-    return Open(businessCard.socialMedia.GitHub.url);
+    return openUrl(businessCard.socialMedia.GitHub.url);
   },
   LinkedIn() {
-    return Open(businessCard.socialMedia.LinkedIn.url);
+    return openUrl(businessCard.socialMedia.LinkedIn.url);
   },
   NPM() {
-    return Open(businessCard.socialMedia.NPM.url);
+    return openUrl(businessCard.socialMedia.NPM.url);
   },
   Twitter() {
-    return Open(businessCard.socialMedia.Twitter.url);
+    return openUrl(businessCard.socialMedia.Twitter.url);
   },
   Website() {
-    return Open(businessCard.socialMedia.Website.url);
+    return openUrl(businessCard.socialMedia.Website.url);
   },
   Work() {
-    return Open(businessCard.work.employee.url);
+    return openUrl(businessCard.work.employee.url);
   },
   YouTube() {
-    return Open(businessCard.socialMedia.YouTube.url);
+    return openUrl(businessCard.socialMedia.YouTube.url);
   },
 };
 
