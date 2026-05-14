@@ -4,6 +4,7 @@ import CFonts from "cfonts";
 import Inquirer from "inquirer";
 import Open from "open";
 import businessCard from "./data/business-card.json" with { type: "json" };
+import pkg from "./package.json" with { type: "json" };
 
 /**
  * Constants
@@ -62,8 +63,19 @@ CFonts.say(
     font: "console",
     colors: ["yellowBright", "blue", "yellowBright"],
     background: "transparent",
+    spaceless: true,
   },
 );
+
+console.log();
+
+CFonts.say(`dtx-bizcard v${pkg.version}`, {
+  align: "center",
+  font: "console",
+  colors: ["gray"],
+  background: "transparent",
+  spaceless: true,
+});
 
 Inquirer.prompt([
   {
